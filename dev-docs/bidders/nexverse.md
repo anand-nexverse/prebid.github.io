@@ -47,6 +47,12 @@ To configure the Nexverse adapter, you will need the following parameters:
 | uid    | required | Publisher's unique ID     | "12345"    | string |
 | pubId | required | Publisher ID              | "54321"    | string |
 | pubEpid   | optional | Publisher's unique EPID   | "epid123"  | string |
+| adPlacementId   | optional | The unique placement ID for the publisher   | "12345"  | string |
+| adPlacementName   | optional | The unique placment Name for the publisher   | "IN_abc.com_mid_300x250"  | string |
+| siteName   | optional | The Site Name of the publisher   | "nexverse.ai"  | string |
+| siteId   | optional | The Site ID for the publisher   | "12"  | string |
+| date   | optional | The Placement Creation Date(YYYY-MM-DD)   | "2024-01-01"  | string |
+
 
 ### Test Parameters
 
@@ -68,6 +74,11 @@ var adUnits = [
           uid: '12345',
           pubId: '54321',
           pubEpid: 'epid123',
+          adPlacementId: '12345',
+          adPlacementName: 'IN_abc.com_mid_300x250',
+          siteName: 'nexverse.ai',
+          siteId: '12',
+          date: '2024-01-01'
         },
       },
     ],
